@@ -1,0 +1,55 @@
+ REGISTRATION SYSTEMS
+
+(Passport, Exam Registration, Course Registration, Recruitment, Conference)
+
+USE CASE
+
+          +----------------------+
+          | Registration System  |
+          +----------------------+
+
+User ------> (Register)
+User ------> (Login)
+User ------> (View Details)
+User ------> (Update Details)
+
+Admin -----> (Validate Details)
+Admin -----> (Maintain Database)
+
+CLASS DIAGRAM 
+
++----------------+
+| User           |
++----------------+
+| userId         |
+| name           |
++----------------+
+| register()     |
+| login()        |
++----------------+
+
++----------------+
+| Registration   |
++----------------+
+| regId          |
+| date           |
++----------------+
+| generateId()   |
++----------------+
+
++----------------+
+| Admin          |
++----------------+
+| adminId        |
++----------------+
+| validate()     |
+| updateData()   |
++----------------+
+
++----------------+
+| Database       |
++----------------+
+| records        |
++----------------+
+| storeData()    |
++----------------+

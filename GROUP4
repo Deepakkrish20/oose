@@ -1,0 +1,53 @@
+EMPLOYEE / PAYROLL SYSTEMS
+
+(Personnel, Payroll, BPO)
+
+
+ USE CASE
+
+        +--------------------+
+        | Employee System    |
+        +--------------------+
+
+Employee -----> (Login)
+Employee -----> (View Salary)
+
+Admin --------> (Add Employee)
+Admin --------> (Update Details)
+Admin --------> (Generate Payslip)
+
+CLASS DIAGRAM
+
++----------------+
+| Employee       |
++----------------+
+| empId          |
+| name           |
++----------------+
+| login()        |
++----------------+
+
++----------------+
+| Payroll        |
++----------------+
+| salary         |
+| hra            |
++----------------+
+| calculatePay() |
++----------------+
+
++----------------+
+| Admin          |
++----------------+
+| adminId        |
++----------------+
+| updateData()   |
++----------------+
+
++----------------+
+| Database       |
++----------------+
+| records        |
++----------------+
+| storeData()    |
++----------------+

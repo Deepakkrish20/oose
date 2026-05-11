@@ -1,0 +1,53 @@
+ RESERVATION / PAYMENT SYSTEMS
+
+(Railway, Airline, Credit Card)
+
+USE CASE 
+
+        +----------------------+
+        | Reservation System   |
+        +----------------------+
+
+Customer -----> (Login)
+Customer -----> (Reserve Ticket)
+Customer -----> (Cancel Ticket)
+Customer -----> (Payment)
+
+Admin --------> (Update Details)
+
+CLASS DIAGRAM
+
++----------------+
+| Customer       |
++----------------+
+| customerId     |
+| name           |
++----------------+
+| login()        |
++----------------+
+
++----------------+
+| Reservation    |
++----------------+
+| ticketId       |
+| date           |
++----------------+
+| reserve()      |
+| cancel()       |
++----------------+
+
++----------------+
+| Payment        |
++----------------+
+| amount         |
++----------------+
+| pay()          |
++----------------+
+
++----------------+
+| Admin          |
++----------------+
+| adminId        |
++----------------+
+| updateData()   |
++----------------+

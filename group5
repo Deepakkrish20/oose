@@ -1,0 +1,53 @@
+    MANAGEMENT / DATABASE SYSTEMS
+
+(Student Info, Stock, Foreign Trading)
+
+
+  USE CASE
+      
+        +--------------------+
+        | Management System  |
+        +--------------------+
+
+User ---------> (View Details)
+User ---------> (Search Records)
+
+Admin --------> (Add Records)
+Admin --------> (Update Records)
+Admin --------> (Generate Reports)
+
+CLASS DIAGRAM
+
++----------------+
+| User           |
++----------------+
+| userId         |
+| name           |
++----------------+
+| search()       |
++----------------+
+
++----------------+
+| Record         |
++----------------+
+| recordId       |
+| details        |
++----------------+
+| update()       |
++----------------+
+
++----------------+
+| Admin          |
++----------------+
+| adminId        |
++----------------+
+| maintainData() |
++----------------+
+
++----------------+
+| Report         |
++----------------+
+| reportId       |
++----------------+
+| generate()     |
++----------------+

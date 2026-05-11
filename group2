@@ -1,0 +1,53 @@
+ LIBRARY / BOOK SYSTEMS
+
+(Book Bank, Library, E-Book)
+
+USE CASE
+
+          +------------------+
+          | Library System   |
+          +------------------+
+
+User --------> (Search Book)
+User --------> (Borrow Book)
+User --------> (Return Book)
+
+Librarian ---> (Add Book)
+Librarian ---> (Maintain Records)
+
+CLASS DIAGRAM
+
++----------------+
+| Book           |
++----------------+
+| bookId         |
+| title          |
++----------------+
+| searchBook()   |
++----------------+
+
++----------------+
+| User           |
++----------------+
+| userId         |
+| name           |
++----------------+
+| borrowBook()   |
+| returnBook()   |
++----------------+
+
++----------------+
+| Librarian      |
++----------------+
+| librarianId    |
++----------------+
+| maintainData() |
++----------------+
+
++----------------+
+| Transaction    |
++----------------+
+| issueDate      |
++----------------+
+| issueBook()    |
++----------------+
